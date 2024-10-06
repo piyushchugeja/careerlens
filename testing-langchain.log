@@ -1,0 +1,129 @@
+8.1s 1 Requirement already satisfied: transformers in /opt/conda/lib/python3.10/site-packages (4.44.2)
+8.3s 2 Collecting transformers
+8.4s 3 Downloading transformers-4.45.1-py3-none-any.whl.metadata (44 kB)
+8.4s 4 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.4 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.4/44.4 kB[0m [31m1.5 MB/s[0m eta [36m0:00:00[0m
+8.4s 5 [?25hRequirement already satisfied: accelerate in /opt/conda/lib/python3.10/site-packages (0.34.2)
+9.2s 6 Requirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from transformers) (3.15.1)
+9.2s 7 Requirement already satisfied: huggingface-hub<1.0,>=0.23.2 in /opt/conda/lib/python3.10/site-packages (from transformers) (0.25.0)
+9.2s 8 Requirement already satisfied: numpy>=1.17 in /opt/conda/lib/python3.10/site-packages (from transformers) (1.26.4)
+9.2s 9 Requirement already satisfied: packaging>=20.0 in /opt/conda/lib/python3.10/site-packages (from transformers) (21.3)
+9.2s 10 Requirement already satisfied: pyyaml>=5.1 in /opt/conda/lib/python3.10/site-packages (from transformers) (6.0.2)
+9.2s 11 Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers) (2024.5.15)
+9.2s 12 Requirement already satisfied: requests in /opt/conda/lib/python3.10/site-packages (from transformers) (2.32.3)
+9.2s 13 Requirement already satisfied: safetensors>=0.4.1 in /opt/conda/lib/python3.10/site-packages (from transformers) (0.4.5)
+9.8s 14 Collecting tokenizers<0.21,>=0.20 (from transformers)
+9.8s 15 Downloading tokenizers-0.20.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+9.8s 16 Requirement already satisfied: tqdm>=4.27 in /opt/conda/lib/python3.10/site-packages (from transformers) (4.66.4)
+9.9s 17 Requirement already satisfied: psutil in /opt/conda/lib/python3.10/site-packages (from accelerate) (5.9.3)
+9.9s 18 Requirement already satisfied: torch>=1.10.0 in /opt/conda/lib/python3.10/site-packages (from accelerate) (2.4.0)
+10.0s 19 Requirement already satisfied: fsspec>=2023.5.0 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.23.2->transformers) (2024.6.1)
+10.0s 20 Requirement already satisfied: typing-extensions>=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.23.2->transformers) (4.12.2)
+10.0s 21 Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging>=20.0->transformers) (3.1.2)
+10.1s 22 Requirement already satisfied: sympy in /opt/conda/lib/python3.10/site-packages (from torch>=1.10.0->accelerate) (1.13.3)
+10.1s 23 Requirement already satisfied: networkx in /opt/conda/lib/python3.10/site-packages (from torch>=1.10.0->accelerate) (3.3)
+10.1s 24 Requirement already satisfied: jinja2 in /opt/conda/lib/python3.10/site-packages (from torch>=1.10.0->accelerate) (3.1.4)
+10.2s 25 Requirement already satisfied: charset-normalizer<4,>=2 in /opt/conda/lib/python3.10/site-packages (from requests->transformers) (3.3.2)
+10.2s 26 Requirement already satisfied: idna<4,>=2.5 in /opt/conda/lib/python3.10/site-packages (from requests->transformers) (3.7)
+10.2s 27 Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests->transformers) (1.26.18)
+10.2s 28 Requirement already satisfied: certifi>=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests->transformers) (2024.8.30)
+10.4s 29 Requirement already satisfied: MarkupSafe>=2.0 in /opt/conda/lib/python3.10/site-packages (from jinja2->torch>=1.10.0->accelerate) (2.1.5)
+10.4s 30 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /opt/conda/lib/python3.10/site-packages (from sympy->torch>=1.10.0->accelerate) (1.3.0)
+10.5s 31 Downloading transformers-4.45.1-py3-none-any.whl (9.9 MB)
+10.7s 32 [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/9.9 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.4/9.9 MB[0m [31m13.8 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.9/9.9 MB[0m [31m41.4 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━[0m [32m7.7/9.9 MB[0m [31m74.0 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m9.9/9.9 MB[0m [31m83.6 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9.9/9.9 MB[0m [31m58.8 MB/s[0m eta [36m0:00:00[0m
+10.7s 33 [?25hDownloading tokenizers-0.20.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.9 MB)
+10.7s 34 [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.9 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m2.9/2.9 MB[0m [31m191.4 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.9/2.9 MB[0m [31m71.2 MB/s[0m eta [36m0:00:00[0m
+20.8s 35 [?25hInstalling collected packages: tokenizers, transformers
+20.8s 36 Attempting uninstall: tokenizers
+20.8s 37 Found existing installation: tokenizers 0.19.1
+20.8s 38 Uninstalling tokenizers-0.19.1:
+20.9s 39 Successfully uninstalled tokenizers-0.19.1
+21.0s 40 Attempting uninstall: transformers
+21.0s 41 Found existing installation: transformers 4.44.2
+21.5s 42 Uninstalling transformers-4.44.2:
+24.3s 43 Successfully uninstalled transformers-4.44.2
+30.7s 44 Successfully installed tokenizers-0.20.0 transformers-4.45.1
+70.9s 45 [31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+70.9s 46 cudf 24.8.3 requires cubinlinker, which is not installed.
+70.9s 47 cudf 24.8.3 requires cupy-cuda11x>=12.0.0, which is not installed.
+70.9s 48 cudf 24.8.3 requires ptxcompiler, which is not installed.
+70.9s 49 cuml 24.8.0 requires cupy-cuda11x>=12.0.0, which is not installed.
+70.9s 50 dask-cudf 24.8.3 requires cupy-cuda11x>=12.0.0, which is not installed.
+70.9s 51 cudf 24.8.3 requires cuda-python<12.0a0,>=11.7.1, but you have cuda-python 12.6.0 which is incompatible.
+70.9s 52 distributed 2024.7.1 requires dask==2024.7.1, but you have dask 2024.9.0 which is incompatible.
+70.9s 53 google-cloud-bigquery 2.34.4 requires packaging<22.0dev,>=14.3, but you have packaging 24.1 which is incompatible.
+70.9s 54 jupyterlab 4.2.5 requires jupyter-lsp>=2.0.0, but you have jupyter-lsp 1.5.1 which is incompatible.
+70.9s 55 jupyterlab-lsp 5.1.0 requires jupyter-lsp>=2.0.0, but you have jupyter-lsp 1.5.1 which is incompatible.
+70.9s 56 kfp 2.5.0 requires google-cloud-storage<3,>=2.2.1, but you have google-cloud-storage 1.44.0 which is incompatible.
+70.9s 57 kfp 2.5.0 requires requests-toolbelt<1,>=0.8.0, but you have requests-toolbelt 1.0.0 which is incompatible.
+70.9s 58 libpysal 4.9.2 requires shapely>=2.0.1, but you have shapely 1.8.5.post1 which is incompatible.
+70.9s 59 rapids-dask-dependency 24.8.0a0 requires dask==2024.7.1, but you have dask 2024.9.0 which is incompatible.
+70.9s 60 ydata-profiling 4.10.0 requires scipy<1.14,>=1.4.1, but you have scipy 1.14.1 which is incompatible.[0m[31m
+109.1s 61 [0mThe token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+109.1s 62 Token is valid (permission: fineGrained).
+109.1s 63 Your token has been saved to /root/.cache/huggingface/token
+109.1s 64 Login successful
+579.8s 65 /tmp/ipykernel_22/1046973552.py:7: LangChainDeprecationWarning: The class `HuggingFacePipeline` was deprecated in LangChain 0.0.37 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFacePipeline``.
+579.8s 66 llm = HuggingFacePipeline(pipeline=pipe)
+904.2s 67 Human:
+904.2s 68 You are an expert meeting summarizer. Your job is to summarize the following meeting transcription in a concise and meaningful way.
+904.2s 69 You extract insights from meetings, provide action items for people present in the meeting, and provide a summary of the meeting.
+904.2s 70 
+904.2s 71 Meeting transcription:
+904.2s 72 
+904.2s 73 Counselor (C): Hi Manraj, how are you today?
+904.2s 74 Manraj Singh Virdi (M): I’m good, thanks!
+904.2s 75 C: Great! Let’s talk about your career goals. What’s your background?
+904.2s 76 M: I’ve been a software developer for two years, but I’m considering a change—maybe product management or UI/UX design.
+904.2s 77 C: What do you enjoy in your current role, and what don’t you like?
+904.2s 78 M: I enjoy problem-solving, but the routine and deadlines are stressful. I want something more creative.
+904.2s 79 C: That makes sense. For product management or UI/UX, you could leverage your tech background. Have you thought about building a portfolio for UI/UX?
+904.2s 80 M: I’ve seen job listings asking for portfolios, but I’m not sure where to start.
+904.2s 81 C: Try redesigning apps or websites. Use Figma or Adobe XD, document your process, and include it in your portfolio.
+904.2s 82 M: That’s helpful. I’ll start practicing.
+904.2s 83 C: Also, connect with industry professionals and join design communities to expand your network.
+904.2s 84 M: Got it! Thanks, I’ll start working on that.
+904.2s 85 C: Great! Let’s meet again in a few weeks to check your progress.
+904.2s 86 M: Sounds good. Thanks again!
+904.2s 87 
+904.2s 88 
+904.2s 89 Provide insights:
+904.2s 90 - What is Manraj's current career situation and what are his career goals?
+904.2s 91 - What are the reasons behind his desire to change his career path?
+904.2s 92 - What are the key takeaways from the meeting for Manraj?
+904.2s 93 - What action items does Manraj have from the meeting?
+904.2s 94 
+904.2s 95 Insights:
+904.2s 96 - Manraj is a software developer with two years of experience, but he's considering a career change to product management or UI/UX design.
+904.2s 97 - He's looking for a more creative and less stressful role, and he wants to leverage his tech background in a new field.
+904.2s 98 - Manraj's key takeaways from the meeting are the importance of building a portfolio for UI/UX, the need to connect with industry professionals, and the value of joining design communities.
+904.2s 99 - Manraj's action items from the meeting are to start practicing UI/UX design using Figma or Adobe XD, to build a portfolio, and to connect with industry professionals and join design communities.
+904.2s 100 
+904.2s 101 Summary of the meeting:
+904.2s 102 The meeting was between Counselor and Manraj Singh Virdi, where they discussed Manraj's career goals and aspirations. Manraj expressed his desire to change his career path from software development to product management or UI/UX design, citing his need for a more creative and less stressful role. Counselor provided guidance and advice, suggesting that Manraj leverage his tech background in a new field and highlighting the importance of building a portfolio for UI/UX design. Manraj agreed to start practicing UI/UX design and to connect with industry professionals and join design communities. The meeting concluded with a plan to meet again in a few weeks to check Manraj's progress.
+904.2s 103 
+904.2s 104 Action items for people present in the meeting:
+904.2s 105 - Manraj:
+904.2s 106 - Start practicing UI/UX design using Figma or Adobe XD
+904.2s 107 - Build a portfolio for UI/UX design
+904.2s 108 - Connect with industry professionals
+904.2s 109 - Join design communities
+904.2s 110 - Counselor:
+904.2s 111 - Meet with Manraj again in a few weeks to check his progress
+904.2s 112 - Provide ongoing guidance and support to Manraj as he pursues his career goals.  I hope this helps! Let me know if you need anything else.
+904.2s 113 
+904.2s 114 Let me know if you need any further assistance.
+904.2s 115 
+904.2s 116 Please let me know if you need any further assistance.
+904.2s 117 
+909.3s 118 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+909.8s 119 [NbConvertApp] Writing 159849 bytes to __notebook__.ipynb
+911.4s 120 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+912.3s 121 [NbConvertApp] Writing 405276 bytes to __results__.html
